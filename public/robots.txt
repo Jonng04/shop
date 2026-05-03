@@ -1,0 +1,26 @@
+# Robots.txt - SEO Configuration
+User-Agent: *
+Allow: /
+
+# Disallow private/admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /auth/login
+Disallow: /auth/register
+Disallow: /payments
+
+# Crawl delay
+Crawl-delay: 1
+
+# Specific rules for Google
+User-Agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /auth/login
+Disallow: /auth/register
+Disallow: /payments
+Crawl-delay: 0
+
+# Sitemap location
+Sitemap: /sitemap.xml
